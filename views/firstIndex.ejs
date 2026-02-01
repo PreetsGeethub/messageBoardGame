@@ -1,0 +1,31 @@
+<!-- firstIndex.js -->
+
+<% for(let  i = 0;i<messages.length;i++){%>
+    <ul>
+        <li>
+            text: <%= messages[i].text%>
+            <a href="/new/:user">Open</a>
+        </li>
+        <li>
+            user: <%= messages[i].user%>
+        </li>
+        <li>
+            added: <%=messages[i].added%>
+        </li>
+    
+    </ul>   
+    <%}%> 
+    <!-- <ul>
+        <% messages.forEach(msg => { %>
+          <li>
+            <strong>text:</strong> <%= msg.text %> |
+            <strong>user:</strong> <%= msg.user %> |
+            <strong>added:</strong> <%= msg.added %>
+          </li>
+        <% }) %>
+      </ul> -->
+
+
+      <a href="/new" target="_parent">Type Your message</a>      
+
+}
