@@ -25,9 +25,9 @@ index.post('/new',(req,res)=>{
   // res.render('firstIndex',{messages:messages})
   res.redirect("/")
 })
-index.get('/new/:userId',(req,res)=>{
-  const {userId} = req.params;
-  res.render('message',{userId:userId})
+index.get('/new/:id',(req,res)=>{
+  const {id} = req.params;
+  res.render('message',{messages:messages,id:id})
 })
 
 module.exports = index
